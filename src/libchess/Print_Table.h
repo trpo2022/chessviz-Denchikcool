@@ -8,4 +8,3 @@
 #define step 12
 
 void PrintTable(int** chess);
-
