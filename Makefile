@@ -1,8 +1,8 @@
 APP_NAME = chess
 LIB_NAME = libchess
 
-CFLAGS = -Wall -Wextra -Werror
-CPPFLAGS = -I src -MP -MMD -I thirdparty
+CFLAGS =  -Wall -Wextra -Werror
+CPPFLAGS = -I src -MP -MMD
 LDFLAGS =
 LDLIBS =
 
@@ -53,4 +53,4 @@ clean:
 test: $(test_path)
 
 $(test_path): $(test_objects) $(LIB_PATH)
-	gcc $(CFLAGS) -I thirdparty -I src $^ $ -o $@
+	gcc $(CFLAGS) $(CPPFLAGS) -I thirdparty $^ -o $@

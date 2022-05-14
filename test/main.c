@@ -7,5 +7,6 @@
 
 int main(int argc, const char* argv[])
 {
-    return ctest_main(argc, argv);
+    int result = ctest_main(argc, argv);
+    return result;
 }
